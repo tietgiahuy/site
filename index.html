@@ -4,7 +4,7 @@
         <title> !!!!! Website !!!!! </title>
 
         <style>
-            p {
+            #poem {
                 font-family: 'Brush Script MT', cursive;
                 font-size: 150%;
                 line-height: 20%;
@@ -21,19 +21,44 @@
                 padding: 15px;
             }
 
-
+            nav{
+                font-family: 'Trebuchet MS', sans-serif;
+                text-align: center;
+            }
+            
+            a{
+                padding: 20px;
+            }
 
         </style>
     </head>
 
     <body>
-        <p id="red"> Roses are <span style="color: rgb(255, 125, 140);"> red </span></p>
-        <p> Violets are <span style="color: rgb(162, 119, 249);"> blue </span> </p>
-        <p> U r gay </p>
+
+        <nav >
+            <a href="#"> HOME</a> 
+            <a href="#"> AAAA</a> 
+            <a href="#"> UUUU</a> 
+            <a href="#"> IIII</a>
+          </nav>
+
+        <div id="poem">
+            <p id="red"> Roses are <span style="color: rgb(255, 125, 140);"> red </span></p>
+            <p> Violets are <span style="color: rgb(162, 119, 249);"> blue </span> </p>
+            <p> U r gay </p>
+        </div>
+
         <table>
             <tr> 
-                <th> 1 </th> <th> 2 </th> <th> 3 </th> 
+                <th rowspan="2"> 1 </th> <th> 2 </th> <th> 3 </th> 
             </tr>
+            <tr> <td colspan="2">  </td> </tr>
         </table>
+        <br>
+        <form>
+            Name: <input type="text" maxlength="50" placeholder="Enter your name">
+            <input type="button" value="yes">
+        </form>
+
     </body>
 </html>
